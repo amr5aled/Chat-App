@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.amr5aled.chatapplication.MessageActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#7FFb"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/list_message"
+                style="@style/Widget.AppCompat.TextView.SpinnerItem"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".8"
+                android:stackFromBottom="true"
+                android:transcriptMode="alwaysScroll" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/framelayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:elevation="6dp">
+
+                    <EditText
+                        android:id="@+id/message"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:background="@drawable/message_text"
+                        android:hint="@string/write_a_message"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="5dp"
+                        android:paddingEnd="90dp"
+                        android:paddingTop="2dp"
+                        android:textColor="#000" />
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_width="35dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/sendbutton" />
+
+                    <Button
+                        android:id="@+id/files"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="45dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/file_upload"
+                        android:onClick="upload_files" />
+
+                    <ImageButton
+                        android:id="@+id/emoji"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="85dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/imoji_icon"
+                        android:onClick="show_emoji"
+                        android:contentDescription="@string/emoji_image"/>
+
+                </FrameLayout>
+            </LinearLayout>
+
+            <GridLayout
+                android:id="@+id/emoji_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Button
+                    android:id="@+id/em4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/em4"
+                    android:onClick="add_emoji" />
+
+                <Button
+                    android:id="@+id/em3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/em3"
+                    android:onClick="add_emoji" />
+
+                <Button
+                    android:id="@+id/em2"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/em2"
+                    android:onClick="add_emoji" />
+
+                <Button
+                    android:id="@+id/em1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:background="@drawable/em1"
+                    android:onClick="add_emoji" />
+            </GridLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

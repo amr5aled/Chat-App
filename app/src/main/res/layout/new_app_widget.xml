@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="250dp"
+    android:layout_height="180dp"
+    android:background="#8C55"
+    android:padding="@dimen/widget_margin">
+
+    <ImageView
+        android:id="@+id/widget_profile_Image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:contentDescription="@string/widget_profile_image"
+        android:background="@drawable/public_profile" />
+
+    <TextView
+        android:id="@+id/widget_profile_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/widget_profile_Image"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/widget_message_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/widget_profile_Image"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/openchat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/widget_message_text"
+        android:text="@string/open_chat" />
+</RelativeLayout>

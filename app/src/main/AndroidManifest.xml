@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.amr5aled.chatapplication">
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.amr5aled.chatapplication.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.amr5aled.chatapplication.MessageActivity"
+            android:label="@string/title_activity_message"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.example.amr5aled.chatapplication.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_login" />
+
+        <service
+            android:name="com.example.amr5aled.chatapplication.ProjectServices"
+            android:exported="false" />
+
+        <activity
+            android:name="com.example.amr5aled.chatapplication.FilePicker"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name="com.example.amr5aled.chatapplication.FriendDetails"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <receiver android:name="com.example.amr5aled.chatapplication.NewAppWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/new_app_widget_info" />
+        </receiver>
+
+    </application>
+
+</manifest>

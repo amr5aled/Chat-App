@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "637886258239",
+    "firebase_url": "https://fcmtest-e36f1.firebaseio.com",
+    "project_id": "fcmtest-e36f1",
+    "storage_bucket": "fcmtest-e36f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637886258239:android:c9bf8b8101e50898",
+        "android_client_info": {
+          "package_name": "com.example.amr5aled.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637886258239-7sv7u686buko5bld287i75tpvss1hubm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBac_dKgp3c1oTsipOz5PRhzpQ2sCAZ-oQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637886258239:android:2abe99c4ad26a3b4",
+        "android_client_info": {
+          "package_name": "com.mohamed.booking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637886258239-7sv7u686buko5bld287i75tpvss1hubm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBac_dKgp3c1oTsipOz5PRhzpQ2sCAZ-oQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
